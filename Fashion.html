@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fashion - Walinase Africa Hub</title>
 
+  <style>
+
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:linear-gradient(to right, black, #003366, #006633);
+      color:white;
+    }
+
+    header{
+      text-align:center;
+      padding:50px;
+      background:black;
+    }
+
+    header h1{
+      color:#00ff99;
+      font-size:45px;
+    }
+
+    header p{
+      font-size:18px;
+    }
+
+    .fashion-container{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:25px;
+      padding:40px;
+    }
+
+    .fashion-card{
+      background:rgba(255,255,255,0.1);
+      width:300px;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 0 15px rgba(0,0,0,0.5);
+      transition:0.3s;
+    }
+
+    .fashion-card:hover{
+      transform:scale(1.05);
+    }
+
+    .fashion-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .fashion-content{
+      padding:20px;
+    }
+
+    .fashion-content h2{
+      color:#00ccff;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:15px;
+      background:#00cc66;
+      color:white;
+      text-decoration:none;
+      padding:10px 20px;
+      border-radius:8px;
+      font-weight:bold;
+    }
+
+    .btn:hover{
+      background:#00994d;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:black;
+      margin-top:40px;
+    }
+
+    .home-link{
+      color:#00ffcc;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>👕 African Fashion & Designs</h1>
+  <p>Modern African Clothing, Style & Creativity</p>
+</header>
+
+<section class="fashion-container">
+
+  <div class="fashion-card">
+    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518" alt="Fashion">
+
+    <div class="fashion-content">
+      <h2>Street Wear</h2>
+      <p>Modern African urban fashion for youth and creatives.</p>
+      <a href="#" class="btn">View Collection</a>
+    </div>
+  </div>
+
+  <div class="fashion-card">
+    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c" alt="Fashion">
+
+    <div class="fashion-content">
+      <h2>Traditional Designs</h2>
+      <p>Authentic African cultural clothing and designs.</p>
+      <a href="#" class="btn">Explore</a>
+    </div>
+  </div>
+
+  <div class="fashion-card">
+    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b" alt="Fashion">
+
+    <div class="fashion-content">
+      <h2>Luxury Collection</h2>
+      <p>Premium African fashion and designer wear.</p>
+      <a href="#" class="btn">Shop Now</a>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+
+  <p>© 2026 Walinase Africa Hub</p>
+
+  <a href="index.html" class="home-link">
+    ⬅ Back Home
+  </a>
+
+</footer>
+
+</body>
+</html>
