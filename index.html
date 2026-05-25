@@ -1,10 +1,149 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Website</title>
+  <title>Walinase Africa Hub</title>
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background: linear-gradient(to right, #000000, #003366, #006633);
+      color:white;
+    }
+
+    header{
+      text-align:center;
+      padding:60px 20px;
+      background:rgba(0,0,0,0.6);
+    }
+
+    header h1{
+      font-size:50px;
+      color:#00ff99;
+    }
+
+    header p{
+      font-size:20px;
+    }
+
+    nav{
+      background:black;
+      padding:15px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:15px;
+      font-weight:bold;
+    }
+
+    .hero{
+      text-align:center;
+      padding:80px 20px;
+    }
+
+    .hero h2{
+      font-size:40px;
+      color:#00ccff;
+    }
+
+    .sections{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
+      padding:40px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.1);
+      width:280px;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 0 15px rgba(0,0,0,0.5);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:scale(1.05);
+    }
+
+    .card h3{
+      color:#00ffcc;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:black;
+      margin-top:40px;
+    }
+
+    button{
+      background:#00cc66;
+      border:none;
+      padding:12px 25px;
+      border-radius:8px;
+      color:white;
+      font-size:16px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:#00994d;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello! My site is working 🚀</h1>
-  <p>Welcome to my GitHub Pages website.</p>
+
+<header>
+  <h1>Walinase Africa Hub</h1>
+  <p>The Home of African Music, Fashion, News & Business</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Music</a>
+  <a href="#">News</a>
+  <a href="#">Fashion</a>
+  <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+  <h2>Welcome to Africa's Digital Movement</h2>
+  <p>Discover music, fashion, culture, and business opportunities.</p>
+  <button>Explore Now</button>
+</section>
+
+<section class="sections">
+
+  <div class="card">
+    <h3>🎵 Music Downloads</h3>
+    <p>Upload your songs and let fans download African music directly.</p>
+  </div>
+
+  <div class="card">
+    <h3>📰 Latest News</h3>
+    <p>Share trending entertainment, celebrity, and community news.</p>
+  </div>
+
+  <div class="card">
+    <h3>👕 Fashion & Designs</h3>
+    <p>Advertise your clothing brand and showcase African designs.</p>
+  </div>
+
+  <div class="card">
+    <h3>📢 Business Promotion</h3>
+    <p>Promote local African businesses and connect with customers.</p>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Walinase Africa Hub | Powered by Africa</p>
+</footer>
+
 </body>
 </html>
