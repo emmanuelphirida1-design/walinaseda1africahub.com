@@ -120,7 +120,39 @@
   background:#00994d;
 }
 </head>
+<script>
 
+function searchSite(){
+
+  let input = document.getElementById("searchInput").value.toLowerCase();
+
+  if(input.includes("music")){
+    window.location.href = "music.html";
+  }
+
+  else if(input.includes("news")){
+    window.location.href = "news.html";
+  }
+
+  else if(input.includes("fashion")){
+    window.location.href = "fashion.html";
+  }
+
+  else if(input.includes("business")){
+    window.location.href = "business.html";
+  }
+
+  else if(input.includes("contact")){
+    window.location.href = "contact.html";
+  }
+
+  else{
+    alert("No results found");
+  }
+
+}
+
+</script>
 <body>
 
 <header>
