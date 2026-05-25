@@ -1,17 +1,159 @@
-<div class="song">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music - Walinase Africa Hub</title>
 
-  <h2>My First Song</h2>
+  <style>
 
-  <p>Walinase Africa Hub</p>
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:linear-gradient(to right, black, #003366, #006633);
+      color:white;
+    }
 
-  <audio controls>
-    <source src="mysong.mp3" type="audio/mpeg">
-  </audio>
+    header{
+      text-align:center;
+      padding:50px;
+      background:black;
+    }
+
+    header h1{
+      color:#00ff99;
+      font-size:45px;
+    }
+
+    .upload-section{
+      text-align:center;
+      margin-top:30px;
+    }
+
+    .upload-btn{
+      background:#00cc66;
+      color:white;
+      padding:12px 25px;
+      border:none;
+      border-radius:8px;
+      font-size:16px;
+      cursor:pointer;
+    }
+
+    .upload-btn:hover{
+      background:#00994d;
+    }
+
+    .music-container{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:25px;
+      padding:40px;
+    }
+
+    .song-card{
+      background:rgba(255,255,255,0.1);
+      width:320px;
+      padding:20px;
+      border-radius:15px;
+      box-shadow:0 0 12px rgba(0,0,0,0.5);
+    }
+
+    .song-card h2{
+      color:#00ccff;
+    }
+
+    audio{
+      width:100%;
+      margin-top:15px;
+    }
+
+    .download-btn{
+      display:inline-block;
+      margin-top:15px;
+      background:#00cc66;
+      color:white;
+      text-decoration:none;
+      padding:10px 20px;
+      border-radius:8px;
+      font-weight:bold;
+    }
+
+    .download-btn:hover{
+      background:#00994d;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:black;
+      margin-top:40px;
+    }
+
+    .home-link{
+      color:#00ffcc;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<header>
+
+  <h1>🎵 Walinase Music Hub</h1>
+
+  <p>Upload, Stream & Download African Music</p>
+
+</header>
+
+<section class="upload-section">
+
+  <h2>⬆️ Upload Music</h2>
+
+  <input type="file" accept="audio/*">
 
   <br><br>
 
-  <a href="mysong.mp3" download>
-    Download Song
+  <button class="upload-btn">
+    Upload Song
+  </button>
+
+</section>
+
+<section class="music-container">
+
+  <div class="song-card">
+
+    <h2>My First Song</h2>
+
+    <p>Walinase Artist</p>
+
+    <audio controls>
+      <source src="mysong.mp3" type="audio/mpeg">
+    </audio>
+
+    <br>
+
+    <a href="mysong.mp3" download class="download-btn">
+      📥 Download
+    </a>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <p>© 2026 Walinase Africa Hub</p>
+
+  <a href="index.html" class="home-link">
+    ⬅ Back Home
   </a>
 
-</div>
+</footer>
+
+</body>
+</html>
